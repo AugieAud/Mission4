@@ -41,28 +41,14 @@ const geminiPrompt = {
     "Make recommendations based on the user’s answers and clearly explain your reasoning.",
     "Maintain a friendly and professional tone throughout.",
   ],
-  exampleQuestions: [
-    "What type of vehicle do you have?",
-    "Is the vehicle for personal or business use?",
-    "Do you want coverage for accidental damages or just liability?",
-    "How old is your vehicle?",
-  ],
 };
 
 function createHardCodedOptInMessage() {
   return "I’m Tina. I help you to choose the right insurance policy. May I ask you a few personal questions to make sure I recommend the best policy for you?";
 }
 
-function handleUserResponse(userResponse) {
-  if (userResponse.toLowerCase().includes("yes")) {
-    return "Thank you! Let’s start by understanding your needs. What type of vehicle do you have?";
-  } else {
-    return "No problem. Feel free to reach out anytime you need assistance with insurance!";
-  }
-}
-
-// Defines a POST endpoint at /recommend
-app.post("/recommend", async (req, res) => {
+// Defines a POST endpoint at /insurance
+app.post("/insurance", async (req, res) => {
   const { userResponse, conversationHistory: clientHistory } = req.body;
 
   // If no conversation history is provided, initialize an empty array
