@@ -31,7 +31,6 @@ const geminiPrompt = {
     "You are Tina, an AI insurance consultant. Your goal is to help users choose the right insurance policy by asking relevant questions and considering their answers. Use the following details to guide your recommendations:",
   userContext: "", // This will hold dynamic input from the user.
   rules: [
-    "Always introduce yourself and ask for user consent before proceeding. The opt-in question is: 'I’m Tina. I help you to choose the right insurance policy. May I ask you a few personal questions to make sure I recommend the best policy for you?'.",
     "Only ask further questions if the user consents.",
     "Your questions must uncover details relevant to the insurance policy, e.g., vehicle type, age, or usage, but do not directly ask which insurance product they want.",
     "Consider the following insurance products and their descriptions:",
@@ -42,10 +41,6 @@ const geminiPrompt = {
     "Maintain a friendly and professional tone throughout.",
   ],
 };
-
-function createHardCodedOptInMessage() {
-  return "I’m Tina. I help you to choose the right insurance policy. May I ask you a few personal questions to make sure I recommend the best policy for you?";
-}
 
 // Defines a POST endpoint at /insurance
 app.post("/insurance", async (req, res) => {
