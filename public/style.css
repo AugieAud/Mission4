@@ -1,9 +1,9 @@
 /* General Body Styling */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "lato", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(128, 168, 131);
+  background-image: linear-gradient(to bottom right, #3f72af, #dbe2ef);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@ body {
 
 /* Container to center content */
 .container {
-  background-color: white;
+  background-image: linear-gradient(to bottom right, #3f72af, #dbe2ef);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -41,11 +41,6 @@ input[type="text"] {
   transition: border-color 0.3s;
 }
 
-input[type="text"]:focus {
-  border-color: #4caf50;
-  outline: none;
-}
-
 /* Chat Display */
 #chatDisplay {
   border: 1px solid #ddd;
@@ -65,7 +60,7 @@ input[type="text"]:focus {
 button {
   padding: 12px 20px;
   width: 100%;
-  background-color: rgb(128, 168, 131);
+  background-color: #112d4e;
   color: white;
   border: none;
   border-radius: 8px;
