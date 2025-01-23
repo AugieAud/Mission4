@@ -15,7 +15,7 @@ This application chats with a user and then recommends the most suitable insuran
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/AugieAud/Mission4.git
+   git clone https://github.com/AugieAud/car-insurance-chatbot.git
    ```
 2. Navigate to the project directory:
    ```sh
